@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dry Fruits Snack | Organic & Healthy</title>
+    <style>
+        /* CSS STYLES */
+        :root {
+            --primary-green: #4f772d;
+            --light-green: #90a955;
+            --dark-green: #31572c;
+            --accent-red: #bc4749;
+            --cream: #f8f9fa;
+            --text-dark: #132a13;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cream);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--primary-green);
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+
+        nav {
+            background: var(--primary-green);
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('mixed.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--dark-green);
+            border-bottom: 2px solid var(--light-green);
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            text-align: center;
+        }
+
+        /* Products Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            color: var(--primary-green);
+        }
+
+        /* Health Benefits Section */
+        .benefits {
+            background-color: var(--light-green);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .benefit-item {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background: var(--dark-green);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: var(--primary-green);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Dry Fruits Snack Logo" class="logo">
+    <p class="tagline">Organic & Healthy Snacks for a Better You</p>
+</header>
+
+<nav>
+    <a href="#products">Products</a>
+    <a href="#benefits">Health Benefits</a>
+    <a href="#about">Our Story</a>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Ditch the Junk.</h2>
+        <p>100% Natural Dried Fruit Chips</p>
+    </div>
+</section>
+
+<div class="container">
+    
+    <div id="products" class="section-title">
+        <h2>Our Healthy Chips</h2>
+    </div>
+    
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="apple.jpg" alt="Apple Chips">
+            <h3>Crispy Apple Chips</h3>
+            <p>100% Premium quality apples with no added sugar.</p>
+        </div>
+        <div class="product-card">
+            <img src="orange.jpg" alt="Orange Chips">
+            <h3>Tangy Orange Chips</h3>
+            <p>Sun-dried citrus slices packed with Vitamin C.</p>
+        </div>
+        <div class="product-card">
+            <img src="kiwi.jpg" alt="Kiwi Chips">
+            <h3>Superfruit Kiwi Chips</h3>
+            <p>Naturally sweet and tangy kiwi slices.</p>
+        </div>
+        <div class="product-card">
+            <img src="mixed.jpg" alt="Mixed Fruit Chips">
+            <h3>Mixed Fruit Medley</h3>
+            <p>The perfect blend of all our signature fruits.</p>
+        </div>
+    </div>
+
+    <div id="benefits" class="benefits">
+        <div class="section-title">
+            <h2 style="color: white; border-bottom-color: white;">Why Choose Healthy Food?</h2>
+        </div>
+        <div class="benefits-list">
+            <div class="benefit-item">
+                <h4>Smart Snacking</h4>
+                <p>Low calorie, high satisfaction without the crash.</p>
+            </div>
+            <div class="benefit-item">
+                <h4>100% Natural</h4>
+                <p>No added MSG, preservatives, or artificial colors.</p>
+            </div>
+            <div class="benefit-item">
+                <h4>Nutritional Value</h4>
+                <p>Retains the essential vitamins and fiber of fresh fruit.</p>
+            </div>
+            <div class="benefit-item">
+                <h4>Portion Control</h4>
+                <p>Easy to carry and perfectly portioned for on-the-go.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="section-title">
+            <h2>Our Concept</h2>
+        </div>
+        <p><strong>The Problem:</strong> Most people today rely on unhealthy, packed junk food like oily chips and candy because healthy options are hard to find.</p>
+        <p><strong>Our Solution:</strong> At <strong>Dry Fruits Snack</strong>, we take fresh apples, oranges, and kiwis, slice them, dry them, and pack them with zero additives. We maintain the highest standards of hygiene to provide a nutritional snack that is easy to carry and ready to eat.</p>
+        <p><strong>Our Goal:</strong> To build a brand that health-conscious customers can trust, proving that "healthy" can also be "delicious."</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Dry Fruits Snack - Pure & Organic</p>
+    <p>Hand-cut | Air-dried | Naturally Sweet</p>
+</footer>
+
+</body>
+</html>
